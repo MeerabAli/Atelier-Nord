@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Villa Aurora — A contemporary residential masterpiece in Copenhagen featuring sustainable design and timeless elegance.">
+    <title>Villa Aurora | Atelier Nord</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="project-detail-page">
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="close-sidebar" id="closeSidebar" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">Studio</a></li>
+                <li><a href="journal.html" class="nav-link">Journal</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <p class="studio-name">Atelier Nord</p>
+                <p class="studio-tagline">Designing spaces beyond imagination</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">LI</a>
+                    <a href="#" class="social-link" aria-label="Pinterest">PI</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="project-hero-image">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80" alt="Villa Aurora exterior" loading="lazy">
+        </div>
+        <div class="project-hero-content">
+            <div class="project-breadcrumb">
+                <a href="projects.html">Projects</a>
+                <span>/</span>
+                <span>Residential</span>
+            </div>
+            <h1 class="project-title">Villa Aurora</h1>
+            <p class="project-subtitle">A contemporary residential masterpiece redefining Nordic living</p>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-gallery">
+        <div class="gallery-grid">
+            <div class="gallery-item large">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80" alt="Living room" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80" alt="Kitchen" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&q=80" alt="Bedroom" loading="lazy">
+            </div>
+            <div class="gallery-item wide">
+                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1200&q=80" alt="Exterior detail" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Info -->
+    <section class="project-info-section">
+        <div class="project-info-grid">
+            <div class="project-description">
+                <span class="section-label">Overview</span>
+                <h2 class="section-title">Architectural Concept</h2>
+                <p class="description-text">
+                    Villa Aurora represents the pinnacle of contemporary Nordic residential design. 
+                    Situated on the coastal cliffs of Copenhagen, this 450m² residence seamlessly 
+                    blends indoor and outdoor living through expansive glazing and natural materials.
+                </p>
+                <p class="description-text">
+                    The design philosophy centers on the interplay of light throughout the day, 
+                    with strategically placed skylights and floor-to-ceiling windows creating 
+                    a dynamic interior that responds to the changing seasons. The material palette 
+                    features local limestone, oak, and brushed bronze, grounding the structure 
+                    in its natural context.
+                </p>
+                <p class="description-text">
+                    Sustainability was paramount in every decision. The home features geothermal 
+                    heating, solar panels integrated into the roof design, and a rainwater 
+                    collection system. The result is a residence that is both luxurious and 
+                    environmentally responsible.
+                </p>
+            </div>
+
+            <div class="project-specs">
+                <div class="spec-item">
+                    <span class="spec-label">Location</span>
+                    <span class="spec-value">Copenhagen, Denmark</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Year</span>
+                    <span class="spec-value">2025</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Area</span>
+                    <span class="spec-value">450 m²</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Status</span>
+                    <span class="spec-value">Completed</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Category</span>
+                    <span class="spec-value">Residential</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blueprint Section -->
+    <section class="project-blueprint">
+        <div class="blueprint-container">
+            <div class="blueprint-header">
+                <span class="section-label">Technical</span>
+                <h2 class="section-title">Architectural Drawings</h2>
+            </div>
+            <div class="blueprint-grid">
+                <div class="blueprint-item">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Floor plan" loading="lazy">
+                    <p class="blueprint-caption">Ground Floor Plan</p>
+                </div>
+                <div class="blueprint-item">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80" alt="Elevation" loading="lazy">
+                    <p class="blueprint-caption">North Elevation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials -->
+    <section class="project-materials">
+        <div class="materials-container">
+            <span class="section-label">Materials</span>
+            <h2 class="section-title">Material Palette</h2>
+            <div class="materials-grid">
+                <div class="material-item">
+                    <div class="material-swatch" style="background-color: #C9C3BC;"></div>
+                    <p class="material-name">Limestone</p>
+                    <p class="material-description">Local Danish limestone for exterior cladding</p>
+                </div>
+                <div class="material-item">
+                    <div class="material-swatch" style="background-color: #8B7355;"></div>
+                    <p class="material-name">Oak</p>
+                    <p class="material-description">FSC-certified oak flooring and millwork</p>
+                </div>
+                <div class="material-item">
+                    <div class="material-swatch" style="background-color: #A48D73;"></div>
+                    <p class="material-name">Bronze</p>
+                    <p class="material-description">Brushed bronze window frames and fixtures</p>
+                </div>
+                <div class="material-item">
+                    <div class="material-swatch" style="background-color: #E8E4DE;"></div>
+                    <p class="material-name">Concrete</p>
+                    <p class="material-description">Polished concrete for interior surfaces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="project-timeline">
+        <div class="timeline-container">
+            <span class="section-label">Process</span>
+            <h2 class="section-title">Construction Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Q1 2024</div>
+                    <div class="timeline-content">
+                        <h3>Design Development</h3>
+                        <p>Initial concept development and client consultations</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Q2-Q3 2024</div>
+                    <div class="timeline-content">
+                        <h3>Permitting & Planning</h3>
+                        <p>Municipal approvals and technical documentation</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Q4 2024 - Q2 2025</div>
+                    <div class="timeline-content">
+                        <h3>Construction</h3>
+                        <p>Foundation, structure, and envelope completion</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Q3 2025</div>
+                    <div class="timeline-content">
+                        <h3>Interior & Completion</h3>
+                        <p>Interior fit-out, landscaping, and final handover</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="project-awards">
+        <div class="awards-container">
+            <span class="section-label">Recognition</span>
+            <h2 class="section-title">Awards & Recognition</h2>
+            <div class="awards-list">
+                <div class="award-item">
+                    <span class="award-year">2025</span>
+                    <span class="award-name">Nordic Architecture Prize — Residential Category</span>
+                </div>
+                <div class="award-item">
+                    <span class="award-year">2025</span>
+                    <span class="award-name">Danish Design Award — Sustainable Architecture</span>
+                </div>
+                <div class="award-item">
+                    <span class="award-year">2026</span>
+                    <span class="award-name">European Property Awards — Best Residential Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="project-testimonial">
+        <div class="testimonial-container">
+            <blockquote class="testimonial-quote">
+                "Working with Atelier Nord was a transformative experience. They didn't just design a house—
+                they created a home that perfectly captures our family's values and lifestyle. Every detail 
+                was considered, every space feels intentional."
+            </blockquote>
+            <div class="testimonial-author">
+                <p class="author-name">Elena & Marcus Bergström</p>
+                <p class="author-title">Homeowners</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="related-projects">
+        <div class="related-header">
+            <span class="section-label">Explore More</span>
+            <h2 class="section-title">Related Projects</h2>
+        </div>
+        <div class="related-grid">
+            <article class="related-card">
+                <a href="project-details.html">
+                    <div class="related-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Nordic Pavilion" loading="lazy">
+                    </div>
+                    <div class="related-info">
+                        <h3 class="related-name">Nordic Pavilion</h3>
+                        <p class="related-location">Oslo, Norway — 2024</p>
+                    </div>
+                </a>
+            </article>
+            <article class="related-card">
+                <a href="project-details.html">
+                    <div class="related-image">
+                        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80" alt="Stone House" loading="lazy">
+                    </div>
+                    <div class="related-info">
+                        <h3 class="related-name">Stone House</h3>
+                        <p class="related-location">Bergen, Norway — 2024</p>
+                    </div>
+                </a>
+            </article>
+            <article class="related-card">
+                <a href="project-details.html">
+                    <div class="related-image">
+                        <img src="https://images.unsplash.com/photo-1600573472591-ee6c563aaec9?w=800&q=80" alt="Forest Retreat" loading="lazy">
+                    </div>
+                    <div class="related-info">
+                        <h3 class="related-name">Forest Retreat</h3>
+                        <p class="related-location">Trondheim, Norway — 2022</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Atelier Nord</h3>
+                <p class="footer-tagline">Designing spaces beyond imagination</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h4 class="footer-heading">Contact</h4>
+                <p>Copenhagen: +45 33 12 34 56</p>
+                <p>Oslo: +47 22 34 56 78</p>
+                <p>hello@ateliernord.com</p>
+            </div>
+
+            <div class="footer-address">
+                <h4 class="footer-heading">Studios</h4>
+                <p>Bredgade 42, 1260 Copenhagen</p>
+                <p>Hegdehaugsveien 15, 0352 Oslo</p>
+            </div>
+
+            <div class="footer-social">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atelier Nord. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

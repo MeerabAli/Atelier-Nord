@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Atelier Nord. Start your architectural project with our expert team in Copenhagen or Oslo.">
+    <title>Contact | Atelier Nord</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contact-page">
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="close-sidebar" id="closeSidebar" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">Studio</a></li>
+                <li><a href="journal.html" class="nav-link">Journal</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <p class="studio-name">Atelier Nord</p>
+                <p class="studio-tagline">Designing spaces beyond imagination</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">LI</a>
+                    <a href="#" class="social-link" aria-label="Pinterest">PI</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Page Header -->
+    <header class="page-header contact-header">
+        <div class="page-header-content">
+            <span class="page-label">Get in Touch</span>
+            <h1 class="page-title">Start Your Project</h1>
+            <p class="page-description">We'd love to hear about your vision. Let's discuss how we can bring it to life.</p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <h2 class="form-title">Send Us a Message</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" id="firstName" name="firstName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" class="form-input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone (Optional)</label>
+                        <input type="tel" id="phone" name="phone" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectType" class="form-label">Project Type</label>
+                        <select id="projectType" name="projectType" class="form-select" required>
+                            <option value="">Select a project type</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="hospitality">Hospitality</option>
+                            <option value="interior">Interior Design</option>
+                            <option value="landscape">Landscape</option>
+                            <option value="urban">Urban Planning</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Tell Us About Your Project</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info-wrapper">
+                <div class="contact-info">
+                    <h2 class="info-title">Visit Our Studios</h2>
+                    
+                    <div class="office-card">
+                        <h3 class="office-name">Copenhagen Studio</h3>
+                        <p class="office-address">Bredgade 42<br>1260 Copenhagen K<br>Denmark</p>
+                        <p class="office-phone">+45 33 12 34 56</p>
+                        <p class="office-email">copenhagen@ateliernord.com</p>
+                    </div>
+
+                    <div class="office-card">
+                        <h3 class="office-name">Oslo Studio</h3>
+                        <p class="office-address">Hegdehaugsveien 15<br>0352 Oslo<br>Norway</p>
+                        <p class="office-phone">+47 22 34 56 78</p>
+                        <p class="office-email">oslo@ateliernord.com</p>
+                    </div>
+
+                    <div class="business-hours">
+                        <h3 class="hours-title">Business Hours</h3>
+                        <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
+                        <p>Saturday: By appointment</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="faq-section">
+                    <h2 class="faq-title">Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>What is your typical project timeline?</span>
+                                <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M5 7.5L10 12.5L15 7.5"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Residential projects typically take 12-18 months from concept to completion, while commercial projects can range from 18-36 months depending on scale and complexity.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>What is your design process?</span>
+                                <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M5 7.5L10 12.5L15 7.5"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our process includes: Discovery & Programming, Concept Design, Design Development, Construction Documentation, and Construction Administration. We maintain close collaboration throughout.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Do you work internationally?</span>
+                                <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M5 7.5L10 12.5L15 7.5"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we have completed projects in over 42 countries. While our studios are based in Copenhagen and Oslo, we collaborate with local partners worldwide to ensure successful project delivery.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>What are your fees?</span>
+                                <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M5 7.5L10 12.5L15 7.5"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our fees are project-specific and based on scope, complexity, and services required. We offer transparent pricing and will provide a detailed proposal after our initial consultation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2262.5!2d12.5!3d55.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQwJzQ4LjAiTiAxMsKwMzUnMDAuMCJF!5e0!3m2!1sen!2sdk!4v1234567890"
+                width="100%" 
+                height="600" 
+                style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Social Connect -->
+    <section class="social-connect">
+        <div class="social-container">
+            <h2 class="social-title">Follow Our Journey</h2>
+            <p class="social-description">Stay connected for daily inspiration and project updates.</p>
+            <div class="social-links-large">
+                <a href="#" class="social-link-large">
+                    <span class="social-platform">Instagram</span>
+                    <span class="social-handle">@ateliernord</span>
+                </a>
+                <a href="#" class="social-link-large">
+                    <span class="social-platform">LinkedIn</span>
+                    <span class="social-handle">Atelier Nord</span>
+                </a>
+                <a href="#" class="social-link-large">
+                    <span class="social-platform">Pinterest</span>
+                    <span class="social-handle">@ateliernord</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Atelier Nord</h3>
+                <p class="footer-tagline">Designing spaces beyond imagination</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h4 class="footer-heading">Contact</h4>
+                <p>Copenhagen: +45 33 12 34 56</p>
+                <p>Oslo: +47 22 34 56 78</p>
+                <p>hello@ateliernord.com</p>
+            </div>
+
+            <div class="footer-address">
+                <h4 class="footer-heading">Studios</h4>
+                <p>Bredgade 42, 1260 Copenhagen</p>
+                <p>Hegdehaugsveien 15, 0352 Oslo</p>
+            </div>
+
+            <div class="footer-social">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atelier Nord. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

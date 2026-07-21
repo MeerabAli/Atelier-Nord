@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights, ideas, and perspectives on architecture, design, and the built environment from Atelier Nord.">
+    <title>Journal | Atelier Nord</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="journal-page">
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="close-sidebar" id="closeSidebar" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">Studio</a></li>
+                <li><a href="journal.html" class="nav-link active">Journal</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <p class="studio-name">Atelier Nord</p>
+                <p class="studio-tagline">Designing spaces beyond imagination</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">LI</a>
+                    <a href="#" class="social-link" aria-label="Pinterest">PI</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Page Header -->
+    <header class="page-header journal-header">
+        <div class="page-header-content">
+            <span class="page-label">Insights & Ideas</span>
+            <h1 class="page-title">Journal</h1>
+            <p class="page-description">Exploring architecture, design, sustainability, and the future of the built environment.</p>
+        </div>
+    </header>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <article class="featured-article-card">
+            <div class="featured-article-image">
+                <img src="https://images.unsplash.com/photo-1518005052357-e9871951f3a6?w=1400&q=80" alt="Featured article" loading="lazy">
+            </div>
+            <div class="featured-article-content">
+                <div class="article-meta">
+                    <span class="article-category">Sustainability</span>
+                    <span class="article-date">July 15, 2026</span>
+                    <span class="article-reading-time">8 min read</span>
+                </div>
+                <h2 class="featured-article-title">The Future of Sustainable Architecture: Beyond Net Zero</h2>
+                <p class="featured-article-excerpt">
+                    As climate challenges intensify, architecture must evolve beyond carbon neutrality 
+                    to become regenerative—creating buildings that actively heal the environment and 
+                    restore ecological balance.
+                </p>
+                <a href="#" class="btn btn-text">Read Article →</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- Article Categories -->
+    <section class="article-categories">
+        <div class="category-filter">
+            <button class="category-btn active" data-category="all">All Articles</button>
+            <button class="category-btn" data-category="design">Design</button>
+            <button class="category-btn" data-category="sustainability">Sustainability</button>
+            <button class="category-btn" data-category="technology">Technology</button>
+            <button class="category-btn" data-category="culture">Culture</button>
+            <button class="category-btn" data-category="process">Process</button>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles-grid">
+        <!-- Article 1 -->
+        <article class="article-card" data-category="design">
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Article image" loading="lazy">
+                <span class="article-category-tag">Design</span>
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-date">July 8, 2026</span>
+                    <span class="article-reading-time">6 min read</span>
+                </div>
+                <h3 class="article-title">The Art of Light: Designing with Natural Illumination</h3>
+                <p class="article-excerpt">
+                    Exploring how strategic window placement and skylight design can transform 
+                    interior spaces throughout the day and seasons.
+                </p>
+                <a href="#" class="article-link">Read More →</a>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card" data-category="sustainability">
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80" alt="Article image" loading="lazy">
+                <span class="article-category-tag">Sustainability</span>
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-date">June 28, 2026</span>
+                    <span class="article-reading-time">10 min read</span>
+                </div>
+                <h3 class="article-title">Material Choices: The Carbon Footprint of Building</h3>
+                <p class="article-excerpt">
+                    A deep dive into embodied carbon and how material selection impacts the 
+                    environmental performance of architecture.
+                </p>
+                <a href="#" class="article-link">Read More →</a>
+            </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card" data-category="technology">
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" alt="Article image" loading="lazy">
+                <span class="article-category-tag">Technology</span>
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-date">June 15, 2026</span>
+                    <span class="article-reading-time">7 min read</span>
+                </div>
+                <h3 class="article-title">Digital Craftsmanship: BIM and the Future of Construction</h3>
+                <p class="article-excerpt">
+                    How Building Information Modeling is revolutionizing precision, collaboration, 
+                    and quality in architectural practice.
+                </p>
+                <a href="#" class="article-link">Read More →</a>
+            </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card" data-category="culture">
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80" alt="Article image" loading="lazy">
+                <span class="article-category-tag">Culture</span>
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-date">June 1, 2026</span>
+                    <span class="article-reading-time">5 min read</span>
+                </div>
+                <h3 class="article-title">Nordic Design Principles in a Global Context</h3>
+                <p class="article-excerpt">
+                    Examining how Scandinavian design philosophy translates across cultures 
+                    and climates worldwide.
+                </p>
+                <a href="#" class="article-link">Read More →</a>
+            </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="article-card" data-category="process">
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Article image" loading="lazy">
+                <span class="article-category-tag">Process</span>
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-date">May 20, 2026</span>
+                    <span class="article-reading-time">9 min read</span>
+                </div>
+                <h3 class="article-title">From Sketch to Structure: Our Design Process</h3>
+                <p class="article-excerpt">
+                    A behind-the-scenes look at how we develop architectural concepts from 
+                    initial inspiration to built reality.
+                </p>
+                <a href="#" class="article-link">Read More →</a>
+            </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="article-card" data-category="design">
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80" alt="Article image" loading="lazy">
+                <span class="article-category-tag">Design</span>
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="article-date">May 5, 2026</span>
+                    <span class="article-reading-time">6 min read</span>
+                </div>
+                <h3 class="article-title">The Poetry of Proportion: Classical Principles in Modern Design</h3>
+                <p class="article-excerpt">
+                    Why timeless ratios and proportions remain relevant in contemporary 
+                    architectural practice.
+                </p>
+                <a href="#" class="article-link">Read More →</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2 class="newsletter-title">Stay Inspired</h2>
+            <p class="newsletter-description">
+                Subscribe to our journal for monthly insights on architecture, design, and 
+                sustainable living.
+            </p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Atelier Nord</h3>
+                <p class="footer-tagline">Designing spaces beyond imagination</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h4 class="footer-heading">Contact</h4>
+                <p>Copenhagen: +45 33 12 34 56</p>
+                <p>Oslo: +47 22 34 56 78</p>
+                <p>hello@ateliernord.com</p>
+            </div>
+
+            <div class="footer-address">
+                <h4 class="footer-heading">Studios</h4>
+                <p>Bredgade 42, 1260 Copenhagen</p>
+                <p>Hegdehaugsveien 15, 0352 Oslo</p>
+            </div>
+
+            <div class="footer-social">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atelier Nord. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

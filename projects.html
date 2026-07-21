@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our portfolio of award-winning architectural projects. Residential, commercial, hospitality, and urban design.">
+    <title>Projects | Atelier Nord</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="projects-page">
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="close-sidebar" id="closeSidebar" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">Studio</a></li>
+                <li><a href="journal.html" class="nav-link">Journal</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <p class="studio-name">Atelier Nord</p>
+                <p class="studio-tagline">Designing spaces beyond imagination</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">LI</a>
+                    <a href="#" class="social-link" aria-label="Pinterest">PI</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-content">
+            <span class="page-label">Portfolio</span>
+            <h1 class="page-title">Selected Works</h1>
+            <p class="page-description">A curated collection of our architectural projects spanning residential, commercial, and urban design.</p>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="residential">Residential</button>
+            <button class="filter-btn" data-filter="commercial">Commercial</button>
+            <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+            <button class="filter-btn" data-filter="interior">Interior</button>
+            <button class="filter-btn" data-filter="landscape">Landscape</button>
+            <button class="filter-btn" data-filter="urban">Urban</button>
+        </div>
+    </section>
+
+    <!-- Projects Masonry Grid -->
+    <section class="projects-masonry">
+        <div class="masonry-grid">
+            <!-- Project 1 -->
+            <article class="masonry-item large" data-category="residential">
+                <a href="project-details.html" class="project-link">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80" alt="Villa Aurora" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3 class="project-name">Villa Aurora</h3>
+                                <p class="project-meta">Copenhagen, Denmark — 2025</p>
+                                <span class="project-category">Residential</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="masonry-item" data-category="commercial">
+                <a href="project-details.html" class="project-link">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Nordic Headquarters" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3 class="project-name">Nordic HQ</h3>
+                                <p class="project-meta">Oslo, Norway — 2025</p>
+                                <span class="project-category">Commercial</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="masonry-item" data-category="hospitality">
+                <a href="project-details.html" class="project-link">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Fjord Hotel" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3 class="project-name">Fjord Hotel</h3>
+                                <p class="project-meta">Bergen, Norway — 2024</p>
+                                <span class="project-category">Hospitality</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="masonry-item tall" data-category="residential">
+                <a href="project-details.html" class="project-link">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Stone House" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3 class="project-name">Stone House</h3>
+                                <p class="project-meta">Bergen, Norway — 2024</p>
+                                <span class="project-category">Residential</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="masonry-item" data-category="interior">
+                <a href="project-details.html" class="project-link">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80" alt="Minimal Loft" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3 class="project-name">Minimal Loft</h3>
+                                <p class="project-meta">Stockholm, Sweden — 2024</p>
+                                <span class="project-category">Interior</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="masonry-item large" data-category="urban">
+                <a href="project-details.html" class="project-link">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80" alt="Urban Plaza" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3 class="project-name">Urban Plaza</h3>
+                                <p class="project-meta">Copenhagen, Denmark — 2023</p>
+                                <span class="project-category">Urban</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project 7 -->
+            <article class="masonry-item" data-category="landscape">
+                <a href="project-details.html" class="project-link">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Coastal Garden" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3 class="project-name">Coastal Garden</h3>
+                                <p class="project-meta">Aarhus, Denmark — 2023</p>
+                                <span class="project-category">Landscape</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project 8 -->
+            <article class="masonry-item" data-category="commercial">
+                <a href="project-details.html" class="project-link">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80" alt="Design Studio" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3 class="project-name">Design Studio</h3>
+                                <p class="project-meta">Oslo, Norway — 2023</p>
+                                <span class="project-category">Commercial</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project 9 -->
+            <article class="masonry-item tall" data-category="residential">
+                <a href="project-details.html" class="project-link">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600573472591-ee6c563aaec9?w=800&q=80" alt="Forest Retreat" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3 class="project-name">Forest Retreat</h3>
+                                <p class="project-meta">Trondheim, Norway — 2022</p>
+                                <span class="project-category">Residential</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Load More -->
+    <div class="load-more-wrapper">
+        <button class="btn btn-outline" id="loadMore">Load More Projects</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Atelier Nord</h3>
+                <p class="footer-tagline">Designing spaces beyond imagination</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h4 class="footer-heading">Contact</h4>
+                <p>Copenhagen: +45 33 12 34 56</p>
+                <p>Oslo: +47 22 34 56 78</p>
+                <p>hello@ateliernord.com</p>
+            </div>
+
+            <div class="footer-address">
+                <h4 class="footer-heading">Studios</h4>
+                <p>Bredgade 42, 1260 Copenhagen</p>
+                <p>Hegdehaugsveien 15, 0352 Oslo</p>
+            </div>
+
+            <div class="footer-social">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atelier Nord. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

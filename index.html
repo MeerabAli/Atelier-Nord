@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atelier Nord — Award-winning architecture studio designing spaces beyond imagination. Residential, commercial, and urban design excellence.">
+    <title>Atelier Nord | Architecture Studio</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="close-sidebar" id="closeSidebar" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">Studio</a></li>
+                <li><a href="journal.html" class="nav-link">Journal</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <p class="studio-name">Atelier Nord</p>
+                <p class="studio-tagline">Designing spaces beyond imagination</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">LI</a>
+                    <a href="#" class="social-link" aria-label="Pinterest">PI</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="parallax-layer" data-speed="0.5">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80" alt="Modern architectural interior" class="hero-image">
+            </div>
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="architectural-grid" id="archGrid"></div>
+            
+            <div class="hero-text-wrapper">
+                <p class="hero-subtitle" data-reveal>Est. 2008 — Copenhagen & Oslo</p>
+                <h1 class="hero-title" data-reveal>
+                    <span class="title-line">Designing</span>
+                    <span class="title-line">Spaces</span>
+                    <span class="title-line italic">Beyond</span>
+                    <span class="title-line">Imagination</span>
+                </h1>
+                <div class="hero-cta" data-reveal>
+                    <a href="projects.html" class="btn btn-primary">View Projects</a>
+                    <a href="about.html" class="btn btn-secondary">Our Philosophy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="featured-projects">
+        <div class="section-header">
+            <span class="section-label">Selected Works</span>
+            <h2 class="section-title">Recent Projects</h2>
+        </div>
+        
+        <div class="projects-grid">
+            <article class="project-card featured">
+                <div class="project-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="Villa Aurora" loading="lazy">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Villa Aurora</h3>
+                    <p class="project-location">Copenhagen, Denmark</p>
+                    <p class="project-year">2025</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Nordic Pavilion" loading="lazy">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Nordic Pavilion</h3>
+                    <p class="project-location">Oslo, Norway</p>
+                    <p class="project-year">2024</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80" alt="Stone House" loading="lazy">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Stone House</h3>
+                    <p class="project-location">Bergen, Norway</p>
+                    <p class="project-year">2024</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="view-all-wrapper">
+            <a href="projects.html" class="btn btn-outline">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- Studio Philosophy -->
+    <section class="philosophy">
+        <div class="philosophy-content">
+            <div class="philosophy-text">
+                <span class="section-label">Our Approach</span>
+                <h2 class="section-title">Architecture as<br>Living Art</h2>
+                <p class="philosophy-description">
+                    We believe that exceptional architecture transcends mere functionality. 
+                    Each space we design is a dialogue between light and shadow, 
+                    between nature and structure, between the past and the future.
+                </p>
+                <p class="philosophy-description">
+                    Our Nordic heritage informs our commitment to simplicity, 
+                    sustainability, and timeless elegance. We create spaces that 
+                    breathe, evolve, and inspire.
+                </p>
+                <a href="about.html" class="btn btn-text">Discover Our Story →</a>
+            </div>
+            <div class="philosophy-image">
+                <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=1000&q=80" alt="Architectural detail" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="statistics">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number" data-count="156">0</span>
+                <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="24">0</span>
+                <span class="stat-label">Design Awards</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="18">0</span>
+                <span class="stat-label">Years of Excellence</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="42">0</span>
+                <span class="stat-label">Countries Served</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="section-header centered">
+            <span class="section-label">What We Do</span>
+            <h2 class="section-title">Our Services</h2>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1">
+                        <path d="M20 5L5 15v20l15-10 15 10V15L20 5z"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Residential Design</h3>
+                <p class="service-description">Bespoke homes that reflect your lifestyle and aspirations</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1">
+                        <rect x="5" y="10" width="30" height="25"/>
+                        <path d="M5 10l15-5 15 5"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Commercial Architecture</h3>
+                <p class="service-description">Innovative spaces that elevate brands and businesses</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1">
+                        <circle cx="20" cy="20" r="12"/>
+                        <path d="M20 8v24M8 20h24"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Interior Design</h3>
+                <p class="service-description">Curated interiors that harmonize with architectural vision</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1">
+                        <path d="M5 25l15-15 15 15M10 20l10-10 10 10"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Landscape Design</h3>
+                <p class="service-description">Outdoor spaces that extend the architectural narrative</p>
+            </div>
+        </div>
+
+        <div class="view-all-wrapper">
+            <a href="services.html" class="btn btn-outline">Explore All Services</a>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial-section">
+        <div class="testimonial-content">
+            <blockquote class="testimonial-quote">
+                "Atelier Nord transformed our vision into a living masterpiece. 
+                Their attention to detail and understanding of light and space 
+                is unparalleled. Our home is not just a building—it's a work of art."
+            </blockquote>
+            <div class="testimonial-author">
+                <p class="author-name">Elena & Marcus Bergström</p>
+                <p class="author-title">Villa Aurora, Copenhagen</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Atelier Nord</h3>
+                <p class="footer-tagline">Designing spaces beyond imagination</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h4 class="footer-heading">Contact</h4>
+                <p>Copenhagen: +45 33 12 34 56</p>
+                <p>Oslo: +47 22 34 56 78</p>
+                <p>hello@ateliernord.com</p>
+            </div>
+
+            <div class="footer-address">
+                <h4 class="footer-heading">Studios</h4>
+                <p>Bredgade 42, 1260 Copenhagen</p>
+                <p>Hegdehaugsveien 15, 0352 Oslo</p>
+            </div>
+
+            <div class="footer-social">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atelier Nord. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
